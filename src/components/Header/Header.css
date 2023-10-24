@@ -1,0 +1,45 @@
+.container-header {
+    width: 100%;
+    height: 768px;
+    background-image: url(../../assets/img-1.png);
+    display: flex;
+    align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+span {
+    color: #FF007F;
+}
+
+.header-botton-side-left {
+    width: 50%;
+}
+
+.containter-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.button-header {
+    background-color: #FF007F;
+    border: none;
+    cursor: pointer;
+    width: 242px;
+    height: 60px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 4.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}

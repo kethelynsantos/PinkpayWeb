@@ -1,0 +1,22 @@
+.containter-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+.section-button {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.section-side-left {
+    margin-top: 20px;
+    display: flex;
+}
+
+.section-side-right {
+    
+    
+}
