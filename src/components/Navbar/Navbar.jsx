@@ -16,8 +16,12 @@ function Navbar() {
             </ul>
           </nav>
 
-          <button className='button-nav' >Abrir conta</button>
-         
+          <div className="buttons-navbar">
+            <button className='button-register' >Cadastrar</button>
+            <button className='button-nav' >Entrar</button>
+          </div>
+
+
         </div>
       </nav>
     </>
