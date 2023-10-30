@@ -1,0 +1,151 @@
+.background-color {
+    background-image: radial-gradient(#fff8fb, #ffecf5);
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.textosobre {
+    width: 550px;
+}
+
+.about {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.textosobre h2 {
+    color: #0a0a0a;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.textosobre p {
+    color: rgb(57, 56, 56);
+    line-height: 30px;
+    font-size: 19px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.text-about {
+    padding: 88px 32px;
+    max-width: 1440px;
+    text-align: center;
+}
+
+.container-about {
+    text-align: center;
+    font-family: roboto;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+}
+
+.container-about:nth-of-type(1) h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 4px #000000;
+}
+
+.container-about:nth-of-type(1) {
+    background-image: url(../../assets/mulher.jpg);
+    background-size: cover;
+    height: 856px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+}
+
+.text-custom {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(360deg, rgb(32, 32, 32) 5%, rgba(0, 0, 0, 0) 100%); */
+}
+
+.ibest-image {
+    width: 40%;
+}
+
+.ibest-image p {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.ibest-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ibest-text h2{
+    font-size: 35px;
+    color: #000;
+    margin-top: 2rem;
+}
+
+.container-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-button-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 8rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.about-side-left img {
+    width: 618px;
+    height: 702px;
+    border-radius: 30px;
+}
+
+.about-side-right h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about-side-right p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.container-info {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-info {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.section-info h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+
+.list-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 109px;
+}

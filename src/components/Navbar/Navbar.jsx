@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -10,23 +11,29 @@ function Navbar() {
 
           <nav>
             <ul className='menu-list'>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="servicos">Serviços</a></li>
-              <li><a href="#contato">Contato</a></li>
+              <li>
+                <Link to="/">Inicio</Link>
+              </li>
+              <li>
+                <Link to="/about">Sobre</Link>
+              </li>
+              <li>
+                <Link to="/servicos">Serviços</Link>
+              </li>
+              <li>
+                <Link to="/contato">Contato</Link>
+              </li>
             </ul>
           </nav>
 
           <div className="buttons-navbar">
-            <button className='button-register' >Cadastrar</button>
-            <button className='button-nav' >Entrar</button>
+            <button className='button-register'>Cadastrar</button>
+            <button className='button-nav'>Entrar</button>
           </div>
-
-
         </div>
       </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
-
+export default Navbar;

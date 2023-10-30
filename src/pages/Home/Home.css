@@ -102,3 +102,94 @@ svg {
 }
 
 /* Section end */
+
+/* Card start */
+.card-main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-item {
+    text-align: center;
+    margin: 20px;
+    transition: all 0.2s;
+}
+
+.card-main h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 13%;
+    margin-bottom: 8%;
+    color: #000000;
+}
+
+.card-main p {
+    font-size: 20px;
+    margin-top: 30px;
+    max-width: 413px;
+}
+
+.card-item h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    max-width: 413px;
+}
+
+.card-main span {
+    margin-left: 7px;
+}
+
+/* Card end */
+
+/* Trust start */
+.trust-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.trust-image {
+    width: 50%;
+}
+
+.trust-text {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trust-text h2 {
+    font-size: 38px;
+    color: #000;
+    margin: 0;
+}
+
+/* Trust end */
+
+/* ImageVariable start */
+.image-section {
+    margin-top: 10%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    gap: 109px;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+/* ImageVariable end */

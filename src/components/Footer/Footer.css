@@ -1,0 +1,75 @@
+/* Footer: */
+
+.black-background {
+    background-color: black;
+}
+
+.footer-content{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    color: #ffffff; 
+    padding: 4rem 1rem;
+    gap: 24rem;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.logo-footer {
+    text-align: center;   
+}
+
+.logo-footer p {
+    margin-top: 30px; 
+}
+    
+.links-footer h3{ 
+    margin-bottom: 0.8rem;
+    color: #fff;
+}
+    
+.links-footer ul{
+    list-style: none;
+}
+
+.links-footer ul li{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+} 
+
+.fas {
+    font-weight: 900;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.copyright{
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-list span {
+    color: #fff;
+}
+
+.white-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 38px;
+    color: white;
+}
+
+.footer-bottom {
+    background-color: black; /* Define o fundo como preto */
+    text-align: center;
+    padding: 0px 0px 38px 0;
+}
+/* Footer: */
