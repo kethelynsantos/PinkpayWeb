@@ -118,7 +118,11 @@ svg {
 .card-item {
     text-align: center;
     margin: 20px;
-    transition: all 0.2s;
+}
+
+.card-item:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .card-main h1 {
