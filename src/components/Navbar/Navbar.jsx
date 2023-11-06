@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
 function Navbar() {
@@ -29,6 +31,10 @@ function Navbar() {
           <div className="buttons-navbar">
             <button className='button-register'>Cadastrar</button>
             <button className='button-nav'>Entrar</button>
+          </div>
+
+          <div className="nav-icon-container">
+            <FontAwesomeIcon icon={faBars} />
           </div>
         </div>
       </nav>

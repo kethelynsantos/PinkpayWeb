@@ -18,6 +18,7 @@ import image4 from '../src/assets/image4.png'
 import image5 from '../src/assets/image5.png'
 import ibest from '../src/assets/ibest.png'
 import manAbout from '../src/assets/man-about.png'
+import menu from '../src/assets/menu.png'
 
 export {
     imageMan,
@@ -32,6 +33,7 @@ export {
     image5,
     ibest,
     manAbout,
+    menu,
     Navbar,
     Card,
     ImageVariable,
