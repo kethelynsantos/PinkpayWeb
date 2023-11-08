@@ -11,7 +11,7 @@ function Navbar() {
         <div className='navbar-container'>
           <h1 className='logo'>Pinkpay</h1>
 
-          <nav>
+          <div className="menu-responsive">
             <ul className='menu-list'>
               <li>
                 <Link to="/">Inicio</Link>
@@ -26,13 +26,16 @@ function Navbar() {
                 <Link to="/contato">Contato</Link>
               </li>
             </ul>
-          </nav>
+          
 
-          <div className="buttons-navbar">
-            <button className='button-register'>Cadastrar</button>
-            <button className='button-nav'>Entrar</button>
+            <div className="buttons-navbar">
+              <button className='button-register'>Cadastrar</button>
+              <button className='button-nav'>Entrar</button>
+            </div>
+
+            
           </div>
-
+          
           <div className="nav-icon-container">
             <FontAwesomeIcon icon={faBars} />
           </div>

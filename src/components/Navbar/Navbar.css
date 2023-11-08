@@ -24,6 +24,13 @@ h1 {
     align-items: center;
     justify-content: space-between;
     position: relative;
+} 
+
+.menu-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 nav ul {
@@ -71,6 +78,7 @@ nav ul li a:hover {
 .menu-list {
     list-style: none;
     display: flex;
+    margin-right: 5rem;
 }
 
 .button-nav {
@@ -119,40 +127,58 @@ button:hover {
     gap: 31px;
 }
 
+.nav-icon-container {
+    display: none;
+    cursor: pointer;
+}
+
 /* Media queries */
 @media (max-width: 1070px) {
     .logo {
         font-size: 1.2rem;
     }
 
-    nav {
-        position: absolute;
-        background-color: #ffe5f2;
-        width: 100%;
-        top: 10rem;
-        /* display: none; */
+    .section-title {
+        font-size: 1rem;
     }
 
-    nav ul {
+    .menu-responsive {
+        position: absolute;
+        top: 4.5vh;
+        right: 0;
+        width: 32vw;
+        height: 85.2vh;
+        background: #fee2ff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(5%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+
+    /* nav ul {
         flex-direction: column;
     }
 
     nav ul li {
         text-align: center;
         padding: 0.8rem;
-    }
+    } */
 
-    .section-title {
-        font-size: 1rem;
-    }
 
-    /* Estilos para os botões "Cadastrar" e "Acessar" */
+/*     
     .buttons-navbar {
         display: flex;
         
         align-items: center;
-        /* Alinhar verticalmente no centro */
-    }
+        
+    } 
 
     .button-register,
     .button-nav {
@@ -160,11 +186,13 @@ button:hover {
         color: #000000;
 
         display: flex;
-        
-        /* Coluna quando a tela é menor */
         align-items: center;
 
     }
 
+    .nav-icon-container {
+        display: block;
+    } 
+*/
    
 }
