@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="black-background">
             <div id="contato" className="page-inner-content footer-content">
                 <div className="links-footer">
-                    <h3>Contato</h3>
+                    <h3 className='contact-contact'>Contato</h3>
                     <ul className="contact-list">
                         <li>
                             <FontAwesomeIcon icon={faPhoneAlt} style={{ marginLeft: '0', marginRight: '10' }} />
@@ -17,10 +17,6 @@ const Footer = () => {
                         <li>
                             <FontAwesomeIcon icon={faEnvelope} style={{ marginLeft: '0', marginRight: '10' }} />
                             <span>pinkpay@gmail.com</span>
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faMapMarkerAlt} style={{ marginLeft: '0', marginRight: '10' }} />
-                            <span>123 Street, City, Country</span>
                         </li>
                         <li>
                             <FontAwesomeIcon icon={faGlobe} style={{ marginLeft: '0', marginRight: '10' }} />

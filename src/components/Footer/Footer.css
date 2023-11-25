@@ -26,7 +26,11 @@
     
 .links-footer h3{ 
     margin-bottom: 0.8rem;
-    color: #fff;
+    color: #fff;  
+}
+
+.contact-contact {
+    margin-left: 1rem;
 }
     
 .links-footer ul{
@@ -37,6 +41,8 @@
     margin-bottom: 0.5rem;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    align-items: center;
 } 
 
 .fas {
