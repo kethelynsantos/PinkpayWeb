@@ -242,6 +242,10 @@ svg {
 
     .image-section img:last-child {
         display: none;
-      }
+    }
+
+    .footer-content {
+        gap: 11rem;
+    }
 
 }
