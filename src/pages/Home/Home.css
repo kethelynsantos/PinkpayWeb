@@ -198,3 +198,50 @@ svg {
 
 /* ImageVariable end */
 
+/* Media queries */
+
+@media (max-width: 1420px) {
+
+    .image-section {
+        gap: 6.5rem;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .image-section {
+        gap: 4rem;
+    }
+
+    .footer-content {
+        gap: 18rem;
+    }
+}
+
+@media (max-width: 1310px) {
+
+    .card-container {
+        display: grid;
+    }
+
+    .trust-text {
+        width: 46%;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 1225px) {
+
+    .image-section {
+        gap: 3rem;
+    }
+
+}
+
+@media (max-width: 1147px) {
+
+    .image-section img:last-child {
+        display: none;
+      }
+
+}
