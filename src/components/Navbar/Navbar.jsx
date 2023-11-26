@@ -26,21 +26,18 @@ function Navbar() {
                 <Link to="/about">Sobre</Link>
               </li>
               <li>
-                <Link to="/servicos">Serviços</Link>
+                <a href="#servicos">Serviços</a>
               </li>
               <li>
-                <Link to="/contato">Contato</Link>
+                <a href="#footer">Contato</a>
               </li>
             </ul>
-
-
-            <div className="buttons-navbar">
-              <button className='button-register'>Cadastrar</button>
-              <button className='button-nav'>Entrar</button>
-            </div>
-
-
           </div>
+
+          <div className="buttons-navbar">
+            <Link to="/loginregistration" className='button-nav'>Cadastrar</Link>
+          </div>
+
           <div className={`menu-mobile-side ${menuActive && 'show'}`}>
             <div className="close-menu" onClick={() => setMenuActive(false)}>
               <FontAwesomeIcon icon={faTimes} />
@@ -55,17 +52,16 @@ function Navbar() {
                   <Link to="/about">Sobre</Link>
                 </li>
                 <li>
-                  <Link to="/servicos">Serviços</Link>
+                  <a href="#servicos">Serviços</a>
                 </li>
                 <li>
-                  <Link to="/contato">Contato</Link>
+                  <a href="#footer">Contato</a>
                 </li>
               </ul>
 
 
               <div className="buttons-navbar">
-                <button className='button-register'>Cadastrar</button>
-                <button className='button-nav'>Entrar</button>
+                <Link to="/loginregistration" className='button-nav'>Cadastrar</Link>
               </div>
             </div>
 

@@ -5,7 +5,7 @@ import { faPhoneAlt, faEnvelope, faMapMarkerAlt, faGlobe } from '@fortawesome/fr
 
 const Footer = () => {
     return (
-        <footer className="black-background">
+        <footer className="black-background"  id="footer">
             <div id="contato" className="page-inner-content footer-content">
                 <div className="links-footer">
                     <h3 className='contact-contact'>Contato</h3>

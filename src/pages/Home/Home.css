@@ -120,7 +120,7 @@ svg {
     margin: 20px;
 }
 
-.card-item:hover{
+.card-item:hover {
     transform: scale(1.1);
     transition: all 0.5s;
 }

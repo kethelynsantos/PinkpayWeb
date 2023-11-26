@@ -39,6 +39,7 @@ nav ul {
     list-style-type: none;
     align-items: center;
     gap: 5rem;
+    margin-left: 5rem;
 }
 
 nav ul li a {
@@ -109,7 +110,9 @@ nav ul li a:hover {
 }
 
 button:hover {
-    background-color: #ff4ba5;
+    background-color: #fff;
+    border: 1px solid #FF007F;
+    color: #FF007F;
 }
 
 .buttons-navbar {
@@ -163,6 +166,9 @@ button:hover {
 
 /* Media queries */
 @media (max-width: 1070px) {
+    .button-nav{
+        display: none;
+    }
 
     .menu-mobile-side {
         display: block;
@@ -177,6 +183,7 @@ button:hover {
 
     .mobile-menu {
         display: block;
+        margin-left: 48rem;
     }
 
 
@@ -222,3 +229,4 @@ button:hover {
    
 
 }
+

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Navbar, Card, ImageVariable, Footer } from '../../../src'
 import { imageMan, card1, card2, card3, trustImage, image1, image2, image3, image4, image5 } from '../../index'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,25 +8,26 @@ import './Home.css'
 
 const Home = () => (
   <main className="main-home">
-    {/* Header start */ }
+    {/* Header start */}
     <header>
       <Navbar />
     </header>
-    {/* Header end */ }
+    {/* Header end */}
 
-    {/* Info start */ }
+    {/* Info start */}
     <section className="container-info-main">
       <div className="containter-width">
         <div className="header-botton-side-left">
           <h2>Do jeito <span>Pink</span> de pagar - Facilitando sua vida financeira e tornando sonhos realidade</h2>
-
-          <button className='button-header'>Abrir conta Pinkpay &#8594;</button>
+          <>
+            <Link to="/loginregistration" className='button-header'>Abrir conta Pinkpay</Link>
+          </>
         </div>
       </div>
     </section>
-    {/* Info end */ }
+    {/* Info end */}
 
-    {/* Section start */ }
+    {/* Section start */}
     <section className="containter-section">
       <div className="section-button">
         <div className="section-side-left">
@@ -42,10 +44,10 @@ const Home = () => (
         </div>
       </div>
     </section>
-    {/* Section end */ }
+    {/* Section end */}
 
-    {/* Card start */ }
-    <section className="card-main">
+    {/* Card start */}
+    <section className="card-main" id="servicos">
       <h1>Sua liberdade financeira em tons de <span>Pink</span></h1>
       <div className="card-container">
         <article className="card-item">
@@ -65,9 +67,9 @@ const Home = () => (
         </article >
       </div>
     </section>
-    {/* Card end */ }
+    {/* Card end */}
 
-    {/* Section trust start */ }
+    {/* Section trust start */}
     <section className="trust-section">
       <div className="trust-text">
         <h2>As maiores <span>empresas do mundo</span> confiam na gente</h2>
@@ -76,9 +78,9 @@ const Home = () => (
         <img src={trustImage} alt="Trust Image" />
       </div>
     </section>
-    {/* Section trust start */ }
+    {/* Section trust start */}
 
-    {/* ImageVariable start */ }
+    {/* ImageVariable start */}
     <section className="image-section">
       <ImageVariable width="240px" src={image1} alt="Image 1" />
       <ImageVariable width="153px" src={image2} alt="Image 2" />
@@ -86,7 +88,7 @@ const Home = () => (
       <ImageVariable width="208px" src={image4} alt="Image 4" />
       <ImageVariable width="78px" src={image5} alt="Image 5" />
     </section>
-    {/* ImageVariable end */ }
+    {/* ImageVariable end */}
 
     <Footer />
 
