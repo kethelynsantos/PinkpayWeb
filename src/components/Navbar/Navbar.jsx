@@ -34,7 +34,7 @@ function Navbar() {
             </ul>
           </div>
 
-          <div className="buttons-navbar">
+          <div className="button-navbar">
             <Link to="/loginregistration" className='button-nav'>Cadastrar</Link>
           </div>
 
@@ -59,11 +59,12 @@ function Navbar() {
                 </li>
               </ul>
 
-
-              <div className="buttons-navbar">
-                <Link to="/loginregistration" className='button-nav'>Cadastrar</Link>
+              <div className="button-navbar-responsive">
+                <Link to="/loginregistration" className='button-responsive'>Cadastrar</Link>
               </div>
             </div>
+
+
 
           </div>
 

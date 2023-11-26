@@ -115,7 +115,7 @@ button:hover {
     color: #FF007F;
 }
 
-.buttons-navbar {
+.button-navbar {
     display: flex;
     align-items: center;
     gap: 31px;
@@ -163,6 +163,30 @@ button:hover {
     display: none;
 }
 
+.button-navbar-responsive {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.button-responsive {
+    background-color: #FF007F;
+    border: none;
+    cursor: pointer;
+    width: 114px;
+    height: 47px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 
 /* Media queries */
 @media (max-width: 1070px) {
@@ -200,7 +224,7 @@ button:hover {
         height: 85.2vh;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transition: transform 0.3s ease-in;
     }
     
@@ -209,6 +233,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        margin: 0 auto;
     }
     
     .menu-mobile-side.show {
