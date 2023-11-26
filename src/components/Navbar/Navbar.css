@@ -230,3 +230,21 @@ button:hover {
 
 }
 
+@media (max-width: 1450px) {
+    .navbar>div {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .header-botton-side-left {
+        margin-left: 1rem;
+    }
+
+    .trust-image img{
+        width: 96%;
+    }
+
+    .image-section {
+        gap: 109px;
+    }
+}
