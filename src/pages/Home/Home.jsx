@@ -20,7 +20,7 @@ const Home = () => (
         <div className="header-botton-side-left">
           <h2>Do jeito <span>Pink</span> de pagar - Facilitando sua vida financeira e tornando sonhos realidade</h2>
           <>
-            <Link to="/loginregistration" className='button-header'>Abrir conta Pinkpay</Link>
+            <Link to="/registration" className='button-header'>Abrir conta Pinkpay</Link>
           </>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useUser } from '../../UserContext';
 import axiosInstance from '../../sevices/axiosInstance';
-import './LoginRegistration.css';
+import './Registration.css';
 
-function LoginRegistration() {
+function Registration() {
   const { state, dispatch } = useUser();
 
   const [cpf, setCPF] = useState('');
@@ -223,4 +223,4 @@ function LoginRegistration() {
   );
 }
 
-export default LoginRegistration;
+export default Registration;

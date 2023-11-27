@@ -4,7 +4,8 @@ import Footer from '../src/components/Footer/Footer'
 import MyCarousel from '../src/components/MyCarousel/MyCarousel'
 import Home from '../src/pages/Home/Home'
 import About from '../src/pages/About/About'
-import LoginRegistration from '../src/pages/LoginRegistration/LoginRegistration'
+import Registration from './pages/Registration/Registration'
+import Login from './pages/Login/Login'
 
 import ImageVariable from '../src/components/ImageVariable/ImageVariable'
 import imageMan from '../src/assets/homem-rosa.png'
@@ -42,5 +43,6 @@ export {
     Home,
     About,
     MyCarousel,
-    LoginRegistration,
+    Registration,
+    Login,
 }

@@ -35,7 +35,8 @@ function Navbar() {
           </div>
 
           <div className="button-navbar">
-            <Link to="/loginregistration" className='button-nav'>Cadastrar</Link>
+            <Link to="/login" className='button-nav'>Entrar</Link>
+            <Link to="/registration" className='button-register'>Cadastrar</Link>
           </div>
 
           <div className={`menu-mobile-side ${menuActive && 'show'}`}>
@@ -60,11 +61,11 @@ function Navbar() {
               </ul>
 
               <div className="button-navbar-responsive">
-                <Link to="/loginregistration" className='button-responsive'>Cadastrar</Link>
+                <Link to="/login" className='button-responsive-enter'>Entrar</Link>
+                <Link to="/registration" className='button-responsive'>Cadastrar</Link>
               </div>
+
             </div>
-
-
 
           </div>
 

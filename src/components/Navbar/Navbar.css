@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 .button-register {
     background-color: #ffffff;
-    border-color: #FF007F;
+    border: 1px solid #FF007F;
     cursor: pointer;
     width: 114px;
     height: 47px;
@@ -109,10 +109,14 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-button:hover {
-    background-color: #fff;
-    border: 1px solid #FF007F;
+.button-nav:hover {
+    background-color: #ffdaec;
     color: #FF007F;
+}
+
+.button-register:hover {
+    background-color: #ffdaec;
+    border: none;
 }
 
 .button-navbar {
@@ -187,11 +191,48 @@ button:hover {
     text-decoration: none;
 }
 
+.button-responsive-enter {
+    background-color: #ffffff;
+    border: 1px solid #FF007F;
+    cursor: pointer;
+    width: 114px;
+    height: 47px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    color: #FF007F;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.button-responsive:hover {
+    background-color: #ffdaec;
+    color: #FF007F;
+}
+
+.button-responsive-enter:hover {
+    background-color: #ffdaec;
+    border: none;
+}
 
 /* Media queries */
 @media (max-width: 1070px) {
     .button-nav{
         display: none;
+    }
+
+    .button-register{
+        display: none;
+    }
+
+    .button-navbar-responsive {
+        display: grid;
+        align-items: center;
+        gap: 31px;
     }
 
     .menu-mobile-side {
