@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './LoginRegistration.css'; 
+import React, { useEffect, useState } from 'react';
+import './LoginRegistration.css';
 
 function LoginRegistration() {
   useEffect(() => {
@@ -25,6 +25,35 @@ function LoginRegistration() {
     };
   }, []);
 
+  const [cpf, setCPF] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSignup = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('api/v1/client', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          cpf,
+          password,
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Usuário cadastrado com sucesso!');
+        // Adicione o redirecionamento ou qualquer outra lógica após o cadastro bem-sucedido.
+      } else {
+        console.error('Erro ao cadastrar usuário.');
+      }
+    } catch (error) {
+      console.error('Erro ao realizar a solicitação:', error);
+    }
+  };
+
   return (
     <div className="container-login">
       {/* Conteúdo da primeira seção */}
@@ -38,14 +67,26 @@ function LoginRegistration() {
         <div className="second-column">
           <h2 className="title title-second">Crie sua conta</h2>
           <p className="description description-second">Preencha os campos e solicite sua conta Pinkpay</p>
-          <form className="form">
+          <form className="form" onSubmit={handleSignup}>
             <label className="label-input" htmlFor="">
-              <input type="text" placeholder="Digite seu CPF" />
+              <input
+                type="text"
+                placeholder="Digite seu CPF"
+                value={cpf}
+                onChange={(e) => setCPF(e.target.value)}
+              />
             </label>
             <label className="label-input" htmlFor="">
-              <input type="password" placeholder="Crie uma senha" />
+              <input
+                type="password"
+                placeholder="Crie uma senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </label>
-            <button className="btn btn-second">Cadastre-se</button>
+            <button type="submit" className="btn btn-second">
+              Cadastre-se
+            </button>
           </form>
         </div>
       </div>
@@ -65,7 +106,7 @@ function LoginRegistration() {
             <label className="label-input" htmlFor="">
               <input type="email" placeholder="Digite seu CPF" />
             </label>
-            <label className="label-input" htmlFor="">            
+            <label className="label-input" htmlFor="">
               <input type="password" placeholder="Digite sua senha" />
             </label>
             <a className="password" href="#">Esqueci minha senha</a>
