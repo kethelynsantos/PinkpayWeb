@@ -42,7 +42,7 @@ function Login() {
   
   useEffect(() => {
     const fetchData = async () => {
-      // Verifica se há um token antes de chamar fetchBalance
+      // Verifica se há um token antes de chamar a função
       if (state.token) {
         await fetchBalance();
       }
@@ -59,7 +59,15 @@ function Login() {
         },
       });
   
-      alert(`Seu saldo atual é: ${response.data.balance}`);
+      console.log('Resposta do endpoint balance/', response.data);
+  
+      const currentBalance = response.data.current_balance;
+  
+      if (currentBalance !== undefined) {
+        alert(`Seu saldo atual é: ${currentBalance}`);
+      } else {
+        console.error('Propriedade não encontrada na resposta.');
+      }
   
     } catch (error) {
       console.error('Erro ao obter saldo:', error.response.data);
